@@ -7,7 +7,7 @@ import java.io.File;
         遍历目录
         递归遍历指定目录下的所有文件和文件夹，然后输出
  */
-public class Recurrence {
+public class RecursiveErgodic {
     public static void main(String[] args){
         File file = new File("e:java");
         getFile(file);
