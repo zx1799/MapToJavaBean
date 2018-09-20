@@ -9,7 +9,7 @@ import java.io.File;
  */
 public class RecursiveErgodic {
     public static void main(String[] args){
-        File file = new File("e:java");
+        File file = new File("e:ss");
         getFile(file);
     }
 
