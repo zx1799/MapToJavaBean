@@ -1,34 +1,11 @@
-# Recurrence
-递归目录
-问题：
-    遍历目录
-    递归遍历指定目录下的所有文件和文件夹，然后输出
-    
-    递归：方法定义中调用方法本身的现象
-    
-    递归问题注意事项：
-        A:不能是死循环，要有输出
-        B:递归的次数不能过多，否则内存会溢出
-        C:构造方法不能递归使用
-        
-    分析：
-        1.创建一个方法，返回值类型是void，参数值类型为File file。
-        2.先判断File文件是否为空
-        3.如果不为空，则获取File文件指定的所有文件夹
-        4.判断文件夹是否为空，如果不为空，遍历文件夹
-        5.调用方法本身，直到文件夹中的子文件为空
-        6.输出
+作业2：利用反射，完成地图和的JavaBean的相互转化
 
-    运行结果：
-            e:ss\gui-config.json
-            e:ss\Shadowsocks-4.1.1.zip
-            e:ss\Shadowsocks.exe
-            e:ss\ss_win_temp\libsscrypto.dll
-            e:ss\ss_win_temp\mgwz.dll
-            e:ss\ss_win_temp\privoxy_1649903474.conf
-            e:ss\ss_win_temp\shadowsocks.log
-            e:ss\ss_win_temp\ss_privoxy.exe
-            e:ss\ss_win_temp\ss_privoxy.log
-            e:ss\ss_win_temp\sysproxy.exe
-            e:ss\ss_win_temp\user-wininet.json
-            e:ss\statistics-config.json
+反射：就是通过类文件对象，去使用该文件中的成员变量，构造方法，成员方法。
+
+类别：成员变量：Field构造方法：构造成员方法：方法
+
+public interface BeanInfo：使用BeanInfo界面创建一个BeanInfo类，并提供关于bean的方法，属性，事件和其他功能的显示信息.Introspector类提供了一种标准的工具来了解目标Java Bean支持的属性，事件和方法。
+
+public static BeanInfo getBeanInfo（class <？> beanClass）throws IntrospectionException：内省Java Bean并了解其所有属性，暴露的方法和事件。
+
+PropertyDescriptor描述了Java Bean通过一对访问器方法导出的一个属性。
